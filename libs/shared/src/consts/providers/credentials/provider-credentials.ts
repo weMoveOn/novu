@@ -1005,3 +1005,12 @@ export const azureSmsConfig: IConfigCredentials[] = [
   },
   ...smsConfigBase,
 ];
+
+export const whatsappConfig: IConfigCredentials[] = [
+  {
+    key: CredentialsKeyEnum.ApiKey,
+    displayName: 'API KEY',
+    type: 'string',
+    required: false,
+  },
+];

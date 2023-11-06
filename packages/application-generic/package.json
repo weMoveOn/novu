@@ -57,6 +57,7 @@
     "@novu/clicksend": "^0.21.0",
     "@novu/dal": "^0.21.0",
     "@novu/discord": "^0.21.0",
+    "@novu/whatsapp": "^0.16.3",
     "@novu/email-webhook": "^0.21.0",
     "@novu/emailjs": "^0.21.0",
     "@novu/expo": "^0.21.0",

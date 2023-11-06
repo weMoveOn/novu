@@ -61,4 +61,12 @@ export const chatProviders: IProviderConfig[] = [
     docReference: 'https://docs.novu.co/channels-and-providers/chat/zulip',
     logoFileName: { light: 'zulip.svg', dark: 'zulip.svg' },
   },
+  {
+    id: ChatProviderIdEnum.Whatsapp,
+    displayName: 'Whatsapp',
+    channel: ChannelTypeEnum.CHAT,
+    credentials: [] as IConfigCredentials[],
+    docReference: 'https://developers.facebook.com/docs/whatsapp/cloud-api/get-started',
+    logoFileName: { light: 'whatsapp.svg', dark: 'whatsapp.svg' },
+  },
 ];
