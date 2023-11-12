@@ -1008,9 +1008,21 @@ export const azureSmsConfig: IConfigCredentials[] = [
 
 export const whatsappConfig: IConfigCredentials[] = [
   {
-    key: CredentialsKeyEnum.ApiKey,
-    displayName: 'API KEY',
+    key: CredentialsKeyEnum.AccountSid,
+    displayName: 'Account SID',
     type: 'string',
-    required: false,
+    required: true,
+  },
+  {
+    key: CredentialsKeyEnum.Token,
+    displayName: 'Auth Token',
+    type: 'string',
+    required: true,
+  },
+  {
+    key: CredentialsKeyEnum.From,
+    displayName: 'From',
+    type: 'string',
+    required: true,
   },
 ];

@@ -8,6 +8,15 @@ export class WhatsappHandler extends BaseChatHandler {
   }
 
   buildProvider(credentials: ICredentials) {
-    this.provider = new WhatsappChatProvider(credentials);
+    const config: {
+      accountSid: string;
+      token: string;
+      from: string;
+    } = {
+      accountSid: credentials.accountSid as string,
+      token: credentials.token as string,
+      from: credentials.from as string,
+    };
+    this.provider = new WhatsappChatProvider(config);
   }
 }
