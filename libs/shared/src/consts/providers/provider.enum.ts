@@ -106,6 +106,7 @@ export enum ChatProviderIdEnum {
   Ryver = 'ryver',
   Zulip = 'zulip',
   GrafanaOnCall = 'grafana-on-call',
+  Whatsapp = 'whatsapp',
 }
 
 export enum PushProviderIdEnum {

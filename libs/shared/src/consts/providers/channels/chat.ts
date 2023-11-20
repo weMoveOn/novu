@@ -1,5 +1,5 @@
 import { IConfigCredentials, IProviderConfig } from '../provider.interface';
-import { grafanaOnCallConfig, slackConfig } from '../credentials';
+import { grafanaOnCallConfig, slackConfig, whatsappConfig } from '../credentials';
 import { ChatProviderIdEnum } from '../provider.enum';
 
 import { ChannelTypeEnum } from '../../../types';
@@ -60,5 +60,13 @@ export const chatProviders: IProviderConfig[] = [
     credentials: [] as IConfigCredentials[],
     docReference: 'https://docs.novu.co/channels-and-providers/chat/zulip',
     logoFileName: { light: 'zulip.svg', dark: 'zulip.svg' },
+  },
+  {
+    id: ChatProviderIdEnum.Whatsapp,
+    displayName: 'Whatsapp',
+    channel: ChannelTypeEnum.CHAT,
+    credentials: whatsappConfig,
+    docReference: 'https://developers.facebook.com/docs/whatsapp/cloud-api/get-started',
+    logoFileName: { light: 'whatsapp.svg', dark: 'whatsapp.svg' },
   },
 ];
